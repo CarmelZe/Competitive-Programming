@@ -22,15 +22,12 @@ import sys
 #
 
 def insertionSort1(n, arr):
-    insertedItem = arr[-1]
-    firstIndex = n-2
+    output = [0] * (max(arr) + 1)
     
-    while(insertedItem<arr[firstIndex]) and (firstIndex>=0):
-        arr[firstIndex+1] = arr[firstIndex]
-        print(*arr)
-        firstIndex-=1
-    arr[firstIndex+1] = insertedItem
-    print(*arr)
+    for el in arr:
+        output[el] += 1
+        
+    return output
 
 if __name__ == '__main__':
     n = int(input().strip())
