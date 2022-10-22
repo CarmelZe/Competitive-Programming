@@ -21,3 +21,4 @@ class Solution:
                 if i!= checkSigns[a]:
                     return False
         return newStack == []
+    print(isValid(isValid, "("))
